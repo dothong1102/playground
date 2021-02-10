@@ -48,8 +48,22 @@
   }
 }
 @media screen and (max-width: 767px) {
+  .header {
+    padding-top: 2rem;
+  }
   .header__menu {
     display: none;
+  }
+  .header__bars-btn {
+    display: block;
+  }
+  .header__bars-icon {
+    color: black;
+    font-size: 2rem;
+  }
+
+  .navigation__bars-btn {
+    display: block;
   }
 
   .category__name {

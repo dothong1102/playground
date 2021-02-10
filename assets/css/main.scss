@@ -88,6 +88,64 @@
         }
     }
     
+    .navigation {
+        &__bars-btn {
+            display: none;
+            width: 2rem;
+            height: 2rem;
+            color: black;
+            font-size: 2rem;
+        }
+        // &__overlay {
+        //     position: fixed;
+        //     top: 0;
+        //     right: 0;
+        //     left: 0;
+        //     bottom: 0;
+        //     background-color: rgba($color: #000000, $alpha: .3);
+        // }
+        &__input:checked~&__mobile {
+            transform: translateX(0%);
+            opacity: 1;
+        }
+        &__mobile {
+            position: fixed;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            width: 100%;
+            background-color: white;
+            transform: translateX(-100%);
+            transition: all .3s linear;
+            opacity: 0;
+            &-close {
+                font-size: 3rem;
+                color: #666;
+                position: absolute;
+                top: 1rem;
+                right: 1.5rem;
+            }
+            &-list {}
+            &-item {
+                text-align: center;
+                // margin-top: 2.5rem;
+                width: 100%;
+                padding: 2rem 0;
+            }
+            &-item:first-child {
+                margin-top: 5rem;
+            }
+            &-item:hover {
+                background-color: #f1f1f1;
+            }
+            &-link {
+                text-decoration: none;
+                font-size: 2rem;
+            }
+        }
+    }
+    
     .banner {
         padding-top: 15rem;
         padding-bottom: 15rem;
@@ -419,7 +477,7 @@
     }
     
     .footer {
-        padding-bottom: 19rem;
+        padding-bottom: 3rem;
         &__container {}
         &__one {
             @include flex(flex-start, space-between);
@@ -438,7 +496,7 @@
         }
         &__two {
             @include flex(center, space-between);
-            margin-top: 3rem;
+            margin-top: 1rem;
             .footer-policy__link:last-child {
                 margin-left: 1.5rem;
             }

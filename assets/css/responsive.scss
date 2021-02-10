@@ -51,8 +51,23 @@
 }
 
 @media screen and (max-width: 767px) {
-    .header__menu {
-        display: none;
+    .header {
+        padding-top: 2rem;
+        &__menu {
+            display: none;
+        }
+        &__bars-btn {
+            display: block;
+        }
+        &__bars-icon {
+            color: black;
+            font-size: 2rem;
+        }
+    }
+    .navigation {
+        &__bars-btn {
+            display: block;
+        }
     }
     .category {
         &__name {

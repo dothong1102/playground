@@ -77,6 +77,52 @@ img {
   color: #ffc87a;
 }
 
+.navigation__bars-btn {
+  display: none;
+  width: 2rem;
+  height: 2rem;
+  color: black;
+  font-size: 2rem;
+}
+.navigation__input:checked ~ .navigation__mobile {
+  transform: translateX(0%);
+  opacity: 1;
+}
+.navigation__mobile {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  background-color: white;
+  transform: translateX(-100%);
+  transition: all 0.3s linear;
+  opacity: 0;
+}
+.navigation__mobile-close {
+  font-size: 3rem;
+  color: #666;
+  position: absolute;
+  top: 1rem;
+  right: 1.5rem;
+}
+.navigation__mobile-item {
+  text-align: center;
+  width: 100%;
+  padding: 2rem 0;
+}
+.navigation__mobile-item:first-child {
+  margin-top: 5rem;
+}
+.navigation__mobile-item:hover {
+  background-color: #f1f1f1;
+}
+.navigation__mobile-link {
+  text-decoration: none;
+  font-size: 2rem;
+}
+
 .banner {
   padding-top: 15rem;
   padding-bottom: 15rem;
@@ -413,7 +459,7 @@ img {
 }
 
 .footer {
-  padding-bottom: 19rem;
+  padding-bottom: 3rem;
 }
 .footer__one {
   display: flex;
@@ -440,7 +486,7 @@ img {
   justify-content: space-between;
   flex-wrap: nowrap;
   flex-direction: row;
-  margin-top: 3rem;
+  margin-top: 1rem;
 }
 .footer__two .footer-policy__link:last-child {
   margin-left: 1.5rem;
